@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@ViewBag.Title</title>
+ <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+	 
+      @RenderSection("head", false)
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+    <link href="~/css/responsive.css" rel="stylesheet" />
+    <link href="~/css/style.css" rel="stylesheet" />
+    <script src="js/pace.js"></script> 
+
+</head>
+<body>
+    
+    <div>
+        <div id="vid-overlay"></div>
+	<!-- Intro -->
+	 
+        @RenderBody()
+       
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/device.min.js"></script>
+	<script src="js/jquery.wordrotator.js"></script>
+	<script src="js/smooth-scroll.js"></script>
+  	<script src="js/TweenMax.min.js"></script>
+  	<script src="js/jquery.superscrollorama.js"></script>
+	<script src="js/jquery.diamonds.js"></script>
+	<script src="js/jquery.mb.YTPlayer.js"></script>
+	<script src="js/scripts.js"></script>
+     <a class="player" data-property="{videoURL:'http://youtu.be/UDV5O4N4FE4',containment:'body',autoPlay:true, quality:'large',  mute:true, startAt:0,opacity:1}"></a>
+	
+</body>
+</html>

@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @RenderSection("head", false)
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+	
+    <link href="~/css/responsive.css" rel="stylesheet" />
+    <link href="~/css/style.css" rel="stylesheet" />
+    <script src="js/pace.js"></script> 
+</head>
+<body>
+   @Html.ActionLink("Home","Index","MyTemplate") 
+     @Html.ActionLink("AboutUs","AboutUs","MyTemplate")
+     @*@Html.ActionLink("MKBSolutions","Index","Home")*@
+       @Html.ActionLink("Test","Test","MyTemplate")
+    <br />
+        @RenderBody();
+    <br />
+  Copy Rights |Contach us |Facebook
+</body>
+</html>
