@@ -10,7 +10,7 @@ namespace WegoTest1.Controllers
     {
         //
         // GET: /Home/
-
+        //TEST WEGO
         public ActionResult Index()
         {
             return View();
